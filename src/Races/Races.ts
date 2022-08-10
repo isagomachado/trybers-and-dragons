@@ -1,4 +1,4 @@
-import NotImplementedError from '../errors/NotImplementedError';
+// import NotImplementedError from '../errors/NotImplementedError';
 
 abstract class Race {
   constructor(
@@ -17,8 +17,8 @@ abstract class Race {
     return this._dexterity;
   }
 
-  static createdRacesInstances() {
-    throw new NotImplementedError();
+  static createdRacesInstances(): number {
+    throw new Error('Not implemented');
   }
 
   abstract get maxLifePoints(): number;
